@@ -1,0 +1,23 @@
+# default
+*.swp
+*.log
+.DS_Store
+.vscode
+
+# node
+node_modules
+
+# babel
+lib
+
+# eslint
+.eslintcache
+
+# jest
+coverage
+
+# next.js
+.next
+
+# folder
+out/
