@@ -1,0 +1,36 @@
+.root {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+
+  :global(.ant-layout-header) {
+    background-color: #0e0e10;
+    padding: 0px;
+    text-align: center;
+  }
+
+  :global(.ant-layout) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+:global(#__next) {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #0e0e10;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+button[ant-click-animating-without-extra-node]:after {
+  opacity: 0;
+}

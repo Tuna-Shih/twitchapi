@@ -1,0 +1,49 @@
+.root {
+  background-color: #0e0e10;
+  padding-left: 240px;
+  width: 100%;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  > :first-child {
+    width: 100%;
+  }
+}
+
+.information {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #0e0e10;
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 30px;
+  }
+
+  > :nth-child(2) {
+    margin-right: 70px;
+
+    p {
+      font-size: 16px;
+      margin: 0px;
+      color: white;
+    }
+  }
+
+  > :last-child {
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+    color: #f65855;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+}
