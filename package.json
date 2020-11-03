@@ -6,7 +6,7 @@
     "dev": "next -p $PORT",
     "lint": "esw --cache --color",
     "lint:watch": "yarn lint -w --rule \"prettier/prettier: off\" --quiet",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start -p $PORT",
     "postinstall": "patch-package"
   },
