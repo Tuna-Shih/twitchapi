@@ -1,8 +1,7 @@
-import { useMemo } from 'react';
 import useSWR from 'swr';
 
-export default (...args) => {
-  const data = useSWR(...args, () =>
+export default (...args) =>
+  useSWR(...args, () =>
     fetch(...args, {
       headers: {
         Authorization: 'Bearer lw62zc0scyk8l72fduljiep8d49i84',
@@ -10,6 +9,3 @@ export default (...args) => {
       },
     }).then(res => res.json()),
   );
-
-  return useMemo(() => data, [data]);
-};
