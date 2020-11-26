@@ -11,12 +11,12 @@ const Streamers = ({ setPassData }) => {
   const [renderMore, setRenderMore] = useState(true);
   const [streamData, setStreamData] = useState([]);
   const { data: streamers } = useFetch(
-    `https://api.twitch.tv/helix/streams?language=zh&first=30`,
+    `https://api.twitch.tv/helix/streams?language=zh&first=20`,
   );
 
   useEffect(() => {
     setStreamData(
-      streamers ? streamers.data.slice(0, renderMore ? 15 : 30) : [],
+      streamers ? streamers.data.slice(0, renderMore ? 10 : 20) : [],
     );
   }, [renderMore, streamers]);
 
